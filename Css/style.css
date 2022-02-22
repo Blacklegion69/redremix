@@ -48,7 +48,7 @@
     text-decoration: none;
   }
   #welcome {
-    background-image: url('/image/Darksky.jpg');
+    background-image: url('image/Darksky.jpg');
     overflow: hidden;
   }
   .welcome {

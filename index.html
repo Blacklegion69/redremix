@@ -57,20 +57,23 @@
   }
   .container {
     width: 50px;
-    height: 160px;
-    top: 75vh;
+    height: 90px;
+    top: 85vh;
     right: 30px;
     z-index: 8800;
     position: fixed;
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: auto;
-    column-gap: 10px;
+    grid-template-columns: auto auto;
+    column-gap: 3px;
   }
   .container > div {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container > div > a {
     text-decoration: none;
@@ -80,6 +83,77 @@
     border-radius: 50%;
     position: relative;
   }
+   .animationcombo {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -190px;
+  }
+  .animation {
+    height: 50px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .animation-1 {
+    height: 50px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotatez(180deg);
+  }
+  .animation > div {
+    width: 8px;
+    height: 34px;
+    background: black;
+  }
+  .animation-1 > div {
+    width: 8px;
+    height: 34px;
+    background: black;
+  }
+  .dot1 {
+    animation: animate 0.5s linear infinite 0s;
+  }
+  .dot2 {
+    animation: animate 0.5s linear infinite 0.2s;
+  }
+  .dot3 {
+    animation: animate 0.5s linear infinite 0.3s;
+  }
+  .dot4 {
+    animation: animate 0.5s linear infinite 0.4s;
+  }
+  .dot5 {
+    animation: animate 0.5s linear infinite 0.5s;
+  }
+  .dot6 {
+    animation: animate 0.5s linear infinite 0.6s;
+  }
+  .dot7 {
+    animation: animate 0.5s linear infinite 0.7s;
+  }
+  .dot8 {
+    animation: animate 0.5s linear infinite 0.8s;
+  }
+  .dot9 {
+    animation: animate 0.5s linear infinite 0.9s;
+  }
+  .dot10 {
+    animation: animate 0.5s linear infinite 1s;
+  }
+  @keyframes animate {
+    100% {
+      transform: rotatex(90deg);
+    }
+  }
+ 
   #welcome {
     background-image: url('image/Darksky.jpg');
     overflow: hidden;
@@ -97,6 +171,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
   }
   .one {
     width: 200px;
@@ -246,12 +321,38 @@
       </div>
     </header>
     <div class="container">
-        <div class="facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
-        <div class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
-        <div class="youtube"><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
-        <div class="Instagram"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="facebook"><a href="#"><i class="fa-brands fa-facebook fa-shake"></i></a></div>
+        <div class="twitter"><a href="#"><i class="fa-brands fa-twitter fa-shake"></i></a></div>
+        <div class="youtube"><a href="#"><i class="fa-brands fa-youtube fa-shake"></i></a></div>
+        <div class="Instagram"><a href="#"><i class="fa-brands fa-instagram fa-shake"></i></a></div>
       </div>
     <section id="welcome" class="welcome">
+      <div class="animationcombo"> 
+    <div class="animation"> 
+     <div class="dot1"></div> 
+     <div class="dot2"></div> 
+     <div class="dot3"></div> 
+     <div class="dot4"></div> 
+     <div class="dot5"></div> 
+     <div class="dot6"></div> 
+     <div class="dot7"></div> 
+     <div class="dot8"></div> 
+     <div class="dot9"></div> 
+     <div class="dot10"></div> 
+    </div> 
+    <div class="animation-1"> 
+     <div class="dot1"></div> 
+     <div class="dot2"></div> 
+     <div class="dot3"></div> 
+     <div class="dot4"></div> 
+     <div class="dot5"></div> 
+     <div class="dot6"></div> 
+     <div class="dot7"></div> 
+     <div class="dot8"></div> 
+     <div class="dot9"></div> 
+     <div class="dot10"></div> 
+    </div> 
+   </div>
       <div class="one">
         <div class="inone">
           welcome

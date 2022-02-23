@@ -30,7 +30,7 @@
     width: 98%;
     height: 70px;
     border-radius: 4px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.3);
     position: fixed;
     display: flex;
     justify-content: center;
@@ -38,6 +38,9 @@
     top: 5px;
     margin: 5px 0px 5px 0px;
     z-index: 190;
+     backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+   
   }
   header > .logo {
     font-size: 50px;
@@ -309,6 +312,9 @@
   }
   #info {
     background-image: url('image/Mix.jpg');
+      backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+   
   }
   #info1 {
     background-image: url('image/charli.jpg');

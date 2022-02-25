@@ -178,6 +178,7 @@
   #welcome {
     background-image: url('image/Darksky.jpg');
     overflow: hidden;
+    display: none;
   }
   .welcome {
     width: 100%;
@@ -312,9 +313,40 @@
   }
   #info {
     background-image: url('image/Mix.jpg');
-      backdrop-filter: blur( 8.5px );
+    backdrop-filter: blur( 8.5px );
     -webkit-backdrop-filter: blur( 8.5px );
-   
+    position: relative;
+    
+  }
+  .my_skill {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2px;
+    overflow: hidden;
+    top: 10px;
+  }
+  .my_skill::before {
+    content: "  ";
+    position: absolute;
+    width: 200%;
+    height: 50px;
+    transform: rotatez(45deg);
+    background-color: rgba(255,168,0,0.5);
+    animation: my_skill 2s linear infinite;
+    left: -200px;
+  }
+  @keyframes my_skill {
+    100% {
+      left: 100px;
+    }
   }
   #info1 {
     background-image: url('image/charli.jpg');
@@ -421,7 +453,15 @@
         <div id="ice7" class="ice">❄</div>
       </div>
     </section>
-    <section id="info" class="welcome social">
+    <section id="info" class="welcome">
+      <div class="my_skill">
+        My Skill
+      </div>
+      <div class="info1_container">
+        <div class="">
+          
+        </div>
+      </div>
     </section>
     <section id="info1" class="welcome">
     </section>
